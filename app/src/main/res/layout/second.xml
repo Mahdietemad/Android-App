@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Let&apos;s Determine Your Character"
+        android:id="@+id/textView2"
+        android:layout_marginTop="44dp"
+        android:textColor="#e00d0d"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rate this app"
+        android:id="@+id/rateText"
+android:layout_marginBottom="65dp"
+        android:textColor="#e00d0d"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/rate"
+    android:id="@+id/imageButton"
+    android:background="@null"
+    android:layout_below="@+id/beginBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="262dp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/beginBtn"
+        android:singleLine="false"
+        android:background="#c07176"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

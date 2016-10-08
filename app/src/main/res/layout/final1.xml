@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Share your result"
+        android:id="@+id/btnShare"
+        android:textColor="#b50410"
+        android:textStyle="bold|italic"
+        android:background="#0f0f0f"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/restartBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retake Quiz"
+        android:id="@+id/restartBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b50410"
+        android:background="#0f0f0f"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:id="@+id/showImage"
+        android:src="@drawable/zombie2"
+        android:layout_below="@+id/textViewResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You&apos;re kind, brave, and caring and end up helping out others. You usually keep to your self. You are especially good with your long range weapon, the bow and arrow. "
+        android:id="@+id/textViewInfo"
+        android:textColor="#c8c8c8"
+     android:gravity="center"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="..."
+        android:id="@+id/textViewResult"
+        android:textColor="#b50410"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="33dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/btnShare"
+        android:layout_alignLeft="@+id/restartBtn"
+        android:layout_alignStart="@+id/restartBtn"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
