@@ -21,8 +21,9 @@ public class Final1 extends Activity {
         //int n = rand.nextInt(3);
         // TextView textView4 = (TextView)findViewById(R.id.textView4);
         //textView4.setText(n);
-        CustomDialogClass cdd=new CustomDialogClass(Final1.this);
-        cdd.show();
+        //CustomDialogClass cdd=new CustomDialogClass(Final1.this);
+        //cdd.show();
+
 
 
 
@@ -35,6 +36,8 @@ public class Final1 extends Activity {
         ImageView showImage = (ImageView)findViewById(R.id.showImage);
 
         Bundle bundle = getIntent().getExtras();
+        showImage.setImageResource(R.drawable.hands);
+
 
 
        /* TextView textView = (TextView)findViewById(R.id.txt);
@@ -66,7 +69,6 @@ public class Final1 extends Activity {
                 (bundle.getString("rg6").equals("Kill them") )
                 )
         {
-            showImage.setImageResource(R.drawable.negan);
             textviewResult.setText("Negan");
             textViewInfo.setText("You're a special type of evil. You're pretty smart and always come out on top, but the methods that get you there are ruthless!");
 
@@ -75,7 +77,6 @@ public class Final1 extends Activity {
                 (bundle.getString("rg4").equals("Use your friend as bait") )
                 )
         {
-            showImage.setImageResource(R.drawable.negan);
             textviewResult.setText("Negan");
             textViewInfo.setText("You're a special type of evil. You're pretty smart and always come out on top, but the methods that get you there are ruthless!");
 
@@ -87,7 +88,6 @@ public class Final1 extends Activity {
 
                  )
          {
-             showImage.setImageResource(R.drawable.daryl);
              textviewResult.setText("Daryl");
              textViewInfo.setText("You're kind, brave, and caring and end up helping out others. You're usually not too outgoing. You are especially good with your long range weapon, the bow and arrow");
 
@@ -100,7 +100,6 @@ public class Final1 extends Activity {
 
                  )
          {
-             showImage.setImageResource(R.drawable.michonne);
              textviewResult.setText("Michonne");
              textViewInfo.setText("You're a generous human being and a great fighter too. You're especially good at using your sword");
 
@@ -113,7 +112,6 @@ public class Final1 extends Activity {
 
                  )
          {
-             showImage.setImageResource(R.drawable.morgan);
              textviewResult.setText("Morgan");
              textViewInfo.setText("The way you view life may differ than other people. However, you're only trying to do well. You are also a great fighter with your fighting stick");
 
@@ -127,7 +125,6 @@ public class Final1 extends Activity {
 
                 )
         {
-            showImage.setImageResource(R.drawable.rick);
             textviewResult.setText("Rick");
             textViewInfo.setText("You're brave and want the best for your group. Your ideologies have transformed over the years, but you still never fail to be a great leader");
 
@@ -206,35 +203,29 @@ public class Final1 extends Activity {
              String text = textviewResult.getText().toString();
 
              if (text == "Glenn") {
-                 showImage.setImageResource(R.drawable.glenn);
                  textviewResult.setText("Glenn");
                  textViewInfo.setText("You're kind hearted in nature, and good with pretty much every weapon");
              }
 
              else if (text == "Maggie") {
-                 showImage.setImageResource(R.drawable.maggie);
                  textviewResult.setText("Maggie");
                  textViewInfo.setText("Over the years, you have gotten more confident and stronger both physically and mentally. You're generous and only want the best for others");
              }
 
              else if (text == "Carol") {
-                 showImage.setImageResource(R.drawable.carol);
                  textviewResult.setText("Carol");
                  textViewInfo.setText("You started out weak hearted, but the apocalypse has made you into a great fierce and savage fighter. You do what needs to be done in order to protect the people around you");
              }
              else if (text == "Sasha") {
-                 showImage.setImageResource(R.drawable.sasha);
                  textviewResult.setText("Sasha");
                  textViewInfo.setText("You are strong both physically and mentally even though you have went through a lot. You are fierce and really good at using assault rifles");
              }
              else if (text == "Carl") {
-                 showImage.setImageResource(R.drawable.carl);
                  textviewResult.setText("Carl");
                  textViewInfo.setText("The traumatizing events you have went through have transformed you into a man. No one should go through what you have gone through, but it has made you what you are today, caring and brave.");
              }
 
              else {
-                 showImage.setImageResource(R.drawable.abraham);
                  textviewResult.setText("Abraham");
                  textViewInfo.setText("You're sarcastic but badass at the same time. You give an alpha male vibe and can shoot guns like no other");
              }
@@ -269,6 +260,7 @@ public class Final1 extends Activity {
 
             }
         });
+
 
 
     }

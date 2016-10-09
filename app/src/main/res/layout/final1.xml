@@ -34,7 +34,7 @@
         android:layout_width="400dp"
         android:layout_height="200dp"
         android:id="@+id/showImage"
-        android:src="@drawable/zombie2"
+        android:src="@drawable/hands"
         android:layout_below="@+id/textViewResult"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -62,17 +62,6 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textSize="33dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView4"
-        android:layout_above="@+id/btnShare"
-        android:layout_alignLeft="@+id/restartBtn"
-        android:layout_alignStart="@+id/restartBtn"
-        android:textColor="#ffffff" />
 
 
 </RelativeLayout>
